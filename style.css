@@ -415,12 +415,11 @@ input:checked + .slider::before{
         padding: 2rem;
     }
     .btns{
-        position: fixed;
+        position:static;
         bottom: 0;
-        background-color: white;
-        right: 0;
+        right: 170;
         left: 0;
-        height: 100px;
+        height: 70px;
         padding-inline: 1rem;
     }
     .step-1 .btns button{
@@ -452,11 +451,4 @@ input:checked + .slider::before{
     .switcher{
         margin: 2rem 0;
     }
-}
-.attribution{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    padding-top: 15px;
 }
