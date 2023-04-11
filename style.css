@@ -451,4 +451,21 @@ input:checked + .slider::before{
     .switcher{
         margin: 2rem 0;
     }
+    /* .attribution{
+        position:fixed;
+    bottom: -15px;
+    height: 70px;
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+    } */
+    
+}
+.attribution{
+    position:fixed;
+    bottom: -15px;
+    height: 70px;
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
 }

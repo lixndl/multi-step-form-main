@@ -167,3 +167,31 @@ function setTotal() {
 function setTime(t){
     return time = t;
 }
+
+const emailInput = document.getElementById("email");
+
+function validarEmail() {
+    const email = emailInput.value.trim();
+    const regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+    if(regex.test(email)) {
+            return true
+    }else{
+        alert("Por favor, introduce una dirección de correo electrónico válida.");
+        return false;
+    }
+}
+
+function checkName() {
+    let myNameInput = document.getElementById("name");
+    let myNameError = document.getElementById("error");
+    let myNameRegex = /^[a-zA-Z-\s]+$/;
+
+  if (myNameInput.value.trim() == "") {
+    myNameError.innerHTML = "This field is required";
+  } else if (myNameRegex.test(myNameInput.value) == false) {
+    myNameError.innerHTML = "Can't contain numbers or symbols";
+  } else if (myNameInput.value.trim() !== "") {
+    myNameError.innerHTML = "";
+  }
+}
+
